@@ -1,6 +1,6 @@
 syntax = "proto3";
 package user;
-option go_package = "POSTnGETtrain/proto/users";
+option go_package = "github.com/JustSelection/project-protos/proto/users";
 
 message User {
     string id = 1;

@@ -562,7 +562,7 @@ const file_proto_users_user_proto_rawDesc = "" +
 	"UpdateUser\x12\x17.user.UpdateUserRequest\x1a\x18.user.UpdateUserResponse\x12?\n" +
 	"\n" +
 	"DeleteUser\x12\x17.user.DeleteUserRequest\x1a\x18.user.DeleteUserResponse\x12<\n" +
-	"\tListUsers\x12\x16.user.ListUsersRequest\x1a\x17.user.ListUsersResponseB\x1bZ\x19POSTnGETtrain/proto/usersb\x06proto3"
+	"\tListUsers\x12\x16.user.ListUsersRequest\x1a\x17.user.ListUsersResponseB5Z3github.com/JustSelection/project-protos/proto/usersb\x06proto3"
 
 var (
 	file_proto_users_user_proto_rawDescOnce sync.Once

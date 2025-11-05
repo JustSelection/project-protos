@@ -691,7 +691,7 @@ const file_proto_tasks_task_proto_rawDesc = "" +
 	"UpdateTask\x12\x17.task.UpdateTaskRequest\x1a\x18.task.UpdateTaskResponse\x12?\n" +
 	"\n" +
 	"DeleteTask\x12\x17.task.DeleteTaskRequest\x1a\x18.task.DeleteTaskResponse\x12N\n" +
-	"\x0fListTasksByUser\x12\x1c.task.ListTasksByUserRequest\x1a\x1d.task.ListTasksByUserResponseB\x1bZ\x19POSTnGETtrain/proto/tasksb\x06proto3"
+	"\x0fListTasksByUser\x12\x1c.task.ListTasksByUserRequest\x1a\x1d.task.ListTasksByUserResponseB5Z3github.com/JustSelection/project-protos/proto/tasksb\x06proto3"
 
 var (
 	file_proto_tasks_task_proto_rawDescOnce sync.Once
