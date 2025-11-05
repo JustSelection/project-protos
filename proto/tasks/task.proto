@@ -1,0 +1,63 @@
+syntax = "proto3";
+package task;
+option go_package = "POSTnGETtrain/proto/tasks";
+
+message Task {
+    string id = 1;
+    string name = 2;
+    bool is_done = 3;
+    string user_id = 4;
+}
+
+message CreateTaskRequest {
+    string name = 1;
+    bool is_done = 2;
+    string user_id = 3;
+}
+message CreateTaskResponse {
+    Task task = 1;
+}
+
+message GetTaskRequest {
+    string id = 1;
+}
+
+message GetTaskResponse {
+    Task task = 1;
+}
+
+message UpdateTaskRequest {
+    string id = 1;
+    string name = 2;
+    bool is_done = 3;
+    string user_id = 4;
+}
+
+message UpdateTaskResponse {
+    Task task = 1;
+}
+
+message DeleteTaskRequest {
+    string id = 1;
+}
+message DeleteTaskResponse {}
+
+message ListTasksRequest {}
+message ListTasksResponse {
+    repeated Task tasks = 1;
+}
+
+message ListTasksByUserRequest {
+    string user_id = 1;
+}
+message ListTasksByUserResponse {
+    repeated Task tasks = 1;
+}
+
+service TaskService {
+    rpc CreateTask(CreateTaskRequest) returns (CreateTaskResponse);
+    rpc GetTask(GetTaskRequest) returns (GetTaskResponse);
+    rpc UpdateTask(UpdateTaskRequest) returns (UpdateTaskResponse);
+    rpc DeleteTask(DeleteTaskRequest) returns (DeleteTaskResponse);
+    rpc ListTasksByUser(ListTasksByUserRequest) returns (ListTasksByUserResponse);
+}
